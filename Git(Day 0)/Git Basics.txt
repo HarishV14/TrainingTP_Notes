@@ -1,0 +1,219 @@
+An Introduction to diffs and patches
+
+    What is Apache?
+      - Apache is responsible for accepting directory (HTTP) requests from Internet users and sending them their desired information in the form of files and Web pages.
+   -Apache website claims the name was derived from this orginal "PATCH" Collection hence APAtCHy server which was then simplified to apache.
+   
+   -diff is short for difference
+   -diff is command line utility that allows you to compare two files line by line
+   
+   -A "patch" Referes to specfic collection of difference between files that can applied to a source code tree using the diff utility. 
+   -patch is a file containing the set of difference between two version of one or more files
+   -patches are usefull for sharing the changes from one branch without using central repository
+   
+   -when you want to see the difference between source code before and after a certain commit or between many commit you can use the tool to show us diff
+   
+   -Git enables this distribution development model and allowing patches to live seperately from main repository pushing and pulling into different trees
+   
+   -Github is based on git but it offers a web and api based workflow around the git tool for distributed open source project development 
+   -patches were shared in github is not through mail but can be used by creating pull request.
+   -pull request - a mechanism for a developer to notify team members that they have completed a feature. 
+  
+    $ diff -Naur sources-orig/ sources-fixed/
+   - --- three shows the original file name
+   -  - is refer to that any lines that exist in the orginal files but not compared in the new file "line was subtracted from the source"
+   - +++ show the opposite compared new file and addition found in this file
+   - + it show that added in the new version file 
+
+   -If you want someone else to test the changes from this tree, you could save this output from diff into a patch file:
+      $ diff -Naur sources-orig/ sources-fixed/ >myfixes.patch
+   -patch file which can be shared to other fellow developers and test this set of changesA fellow developer can apply the changes using the patch tool, given that their current working directory is in the base of the source code tree
+      $ patch -p1 < ../myfixes.patch
+      patching file officespace/interest.go
+   -when other developer change the patch file exact same line the patch tool should solve to merge the change
+      $ patch -p1 < ../myfixes.patch
+      patching file officespace/interest.go
+      Hunk #1 succeeded at 26 (offset 15 lines).
+   -in this case it warn the changes did not apply to the original file but were offset by 15 lines
+
+   -If you are using Git and/or GitHub, you will probably not use the diff or patch tools as standalone tools
+   -One similar capability is to use git diff to provide the unified diff output in your local tree or between any two references 
+   -you can even create patch file that someone not using git might find usefull by simplfy piping the git diff output to a file it gives exact format diffCommand the patch can consume
+   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Git--
+
+ -Create new Repository
+    git init
+   -used to create new repository
+
+ -checkout a repository
+    create a working copy of a local repository by running the command
+       git clone /path/to/repository
+    when using a remote server, your command will be
+        git clone username@host:/path/to/repository
+ 
+ -WorkFlow
+    your local repository consist of three "trees" maintained by git. the first one is your WORKING DIRECTORY which hold the actual files.the second one is the INDEX which acts as a staging area and finally the HEAD which points to last commit you made
+         Working Directory
+              | add
+           Index(Stage)
+              | Commit
+             Head
+
+ -add and Commit
+     -add into index   
+        git add <filename>
+     -to add all the file
+        git add *
+     -to commit use    
+        git commit -m "commit message"
+     -now the file is committed to the HEAD but not to the remote repo
+
+ -Pushing Changes
+     -now it will be in the HEAD of your local working copy.To send those changes to your remote repo 
+        git push origin master  --change master to whatever you need want to push your changes to
+     -If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
+        git remote add origin <server>
+     -Now you are able to push your changes to the selected remote server
+
+ -Branching 
+     -Branches are used to develop features isolated from each other. The master branch is the "default" branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion
+      -create new branch name "feature_x" and switch it using          
+          git checkout -b feature_x
+      -switch back to master
+          git checkout master
+      -delete the branch again
+          git chcekout -d feature_x
+      -a branch is not available to others unless you push the branch to your remote repository
+          git push origin <branch>
+
+ -Update and merge 
+      -to update your local repository to the newest commit, execute
+          git pull
+      -in your working directory to fetch and merge remote changes.
+      -to merge another branch into your active branch (e.g. master), use
+          git merge <branch>
+      -After changing, you need to mark them as merged with
+          git add <filename>
+      -before merging changes, you can also preview them by using
+         git diff <source_branch> <target_branch>
+
+ -tagging
+     -it's recommended to create tags for software releases. this is a known concept, which also exists in SVN. You can create a new tag named 1.0.0 by executing
+         git tag 1.0.0 1b2e1d63ff
+     -the 1b2e1d63ff stands for the first 10 characters of the commit id you want to reference with your tag. You can get the commit id by looking at the...
+
+ -log
+     -in its simplest form, you can study repository history using.. git log
+     -To see only the commits of a certain author:
+         git log --author=bob
+     -To see a very compressed log where each commit is one line:
+         git log --pretty=oneline
+     -Or maybe you want to see an ASCII art tree of all the branches, decorated with the names of tags and branches:
+          git log --graph --oneline --decorate --all
+     -See only which files have changed:
+          git log --name-status
+     -These are just a few of the possible parameters you can use. For more, see git log --help
+ 
+ -Replace local changes
+     -In case you did something wrong, which for sure never happens ;), you can replace local changes using the command
+        git checkout -- <filename>
+     -this replaces the changes in your working tree with the last content in HEAD. Changes already added to the index, as well as new files, will be kept.
+     -If you instead want to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it like this
+        git fetch origin
+        git reset --hard origin/master
+
+ -useful hints
+      -built-in git GUI
+         gitk
+      -use colorful git output
+         git config color.ui true
+      -show log on just one line per commit 
+         git config format.pretty oneline
+      -use interactive adding
+         git add -i       
+
+Version control
+  Version control in Git is a system that helps track changes to files and coordinate work among multiple people. 
+  It allows you to record and manage different versions of your files, so you can review, revert, or merge changes as needed.
+
+SSH
+  Git SSH (Secure Shell) is a method of securely connecting to a remote Git repository over a network.
+
+git revert
+  The git revert command can be considered an 'undo' type command, however, it is not a traditional undo operation. 
+  Instead of removing the commit from the project history, it figures out how to invert the changes introduced by the commit and appends a new commit with the resulting inverse content
+
+git reset 
+  It is undo or the command go back to the before commits
+
+git stash
+  It takes as copy of the commit that will not affect the changes the commit in stash
+
+git rebase 
+  It is also the rewriting the history it changes the one branch to another branch it used to rewirte 
+
+git clean 
+  it is clean the untracted fiels 
+
+git reflog 
+  it is used refer the commits using symbol like ^ and ~ it used ^ to mention to parent which is pointing ^^ this will point to the grandParent ~ this will mention how many we are expect mobe like ~4 it point above 4 the commit
+
+Git blame
+  git blame is the display of author metadata attached to specific committed lines in a file. 
+  This is used to examine specific points of a file's history and get context as to who the last author was that modified the line
+  This is used to explore the history of specific code and answer questions about what, how, and why the code was added to a repository.
+
+git shortlog,--- which groups commits by user, again showing just the subject line for concision
+
+function of git rm --- is to remove tracked files from the Git index
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+How to write a git commit message
+
+Git commit message is the best way to communicate context about a change to fellow developers
+
+The seven rules 
+1. Seperate subject from body with blank line
+    -Firstly, not every commit requires both a subject and a body
+    -Sometimes a single line is fine
+    -when a commit merits a bit of explanation and context, you need to write a body
+    -Commit messages with bodies are not so easy to write with the -m option. You’re better off writing the message in a proper text editor
+    -There are a number of other contexts in Git where the distinction between subject line and body kicks in—but none of them work properly without the blank line in between.
+
+2. Limit the subject line to 50 characters
+    -50 characters is not a hard limit, just a rule of thumb.
+    -so shoot for 50 characters but consider 72 the hard limit
+
+3. Capitalize the subject line
+    -This is as simple as it sounds. Begin all subject lines with a capital letter.
+
+4. Do not end the subject line with a period
+    -Trailing punctuation is unnecessary in subject lines. Besides, space is precious when you’re trying to keep them to 50 chars or less.
+
+5. Use the imperative mood in the subject line
+    -Imperative mood just means “spoken or written as if giving a command or instruction”
+     Example
+       -Clean your room
+       -Close the door
+       -Take out the trash
+    -Git itself uses the imperative whenever it creates a commit on your behalf.
+    -when merge done Merge branch 'myfeature'
+    -when using git revert:
+         Revert "Add the thing with the stuff"
+         This reverts commit cc87791524aedd593cff5a74532befe7ab69ce9d.
+    For example:
+     If applied, this commit will refactor subsystem X for readability
+     If applied, this commit will update getting started documentation
+    should not:
+      If applied, this commit will refactor subsystem X for readability
+      If applied, this commit will update getting started documentation
+
+6. Wrap the body at 72 characters
+    -Git never wraps text automatically. When you write the body of a commit message, you must mind its right margin, and wrap text manually.
+    -The recommendation is to do this at 72 characters, so that Git has plenty of room to indent text while still keeping everything under 80 characters overall
+
+7. Use the body to explain what and why vs. how
+    -
+ 
