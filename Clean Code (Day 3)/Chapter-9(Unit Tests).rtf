@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs44\lang9 Chapter-9 Unit Tests\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs32 The Three Laws of TDD\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b\fs32 First Law:-\b0  You may not write production code until you have written failing unit test \fs22\par
+{\pntext\f1\'B7\tab}\b\fs32 Second Law:- \b0 You may not write more a unit test than is sufficient to fail and not compiling is failing (Write just enought test to fail)\fs22\par
+{\pntext\f1\'B7\tab}\b\fs32 Third Law:-\b0  You may not more production code than is sufficient to pass the currently failing test (Dont add extra features or code that isn't required)\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b\fs32 Keeping tests clean\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\fs32 Test code should maintained  to same standard of quality as their production code\fs22\par
+{\pntext\f1\'B7\tab}\fs32 As you modify the production code , old test starts to fail and mess in test code makes it hard to get those tests to pass again\fs22\par
+{\pntext\f1\'B7\tab}\fs32 It requires thought,design and care.It must be kept as clean as production code\fs22\par
+{\pntext\f1\'B7\tab}\b\fs32 Test Enable the -ilities\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 it is unit test that keeps our code flexible,maintainble and reusable\fs22\par
+{\pntext\f1\'B7\tab}\fs32 No matter how flexible a production code is without a test case there will be a fear that the changes will introduce bugs.\fs22\par
+{\pntext\f1\'B7\tab}\fs32 Test enables all the -ilities(set of qualities) because test enable change\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b\fs32 Clean Test\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\fs32 what makes clean test? Readability is more important in unit test than its production code\fs22\par
+{\pntext\f1\'B7\tab}\fs32 what makes test readable? the same thing that makes all code readable:clarity,simplicity and density of expression\fs22\par
+{\pntext\f1\'B7\tab}\fs32 The BUILD-OPERATE-CHECK2 pattern is made obvious by the structure of these tests\fs22\par
+{\pntext\f1\'B7\tab}\fs32 Each of the test is clearly splits into three parts\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 Build the test data\fs22\par
+{\pntext\f1\'B7\tab}\fs32 Operate the test data\fs22\par
+{\pntext\f1\'B7\tab}\fs32 Checks the operation yielded the expected results\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\fs32 Notice that the vast majority of annoying detail has been eliminated\fs22\par
+{\pntext\f1\'B7\tab}\fs32 The test get right to point and use only the data types and function that truly need\fs22\par
+{\pntext\f1\'B7\tab}\b\fs32 Domain specfic testing language\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 we build up a set of function and utilities that makes use of those APIs and that make the tests more convienient to write and easier to read\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b\fs32 A dual standard\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 The code within the testing API does have a different set of engineering standards than the production code\fs22\par
+{\pntext\f1\'B7\tab}\fs32 It must be still simple and expressive but it need not be as efficeint as production code\fs22\par
+{\pntext\f1\'B7\tab}\fs32 there are things that you might never do in production enviroment that are perfectly fine in test enviroment\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b\fs32 One Assert per Test\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\fs32 Every test function in a JUnit(test automation framework used in java for unit testing ) test should have one and only assertion statement (Statement that part of argument)\fs22\par
+{\pntext\f1\'B7\tab}\fs32  Because it is easy to understand\fs22\par
+{\pntext\f1\'B7\tab}\fs32 Number of assert it should be minimized\fs22\par
+{\pntext\f1\'B7\tab}\b\fs32 Single concept per test\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 We want to test a single concept in each test function\fs22\par
+{\pntext\f1\'B7\tab}\fs32 This test should be split up into three independent tests because it tests three independent things\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b\fs32 FIRST\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\fs32 Clean tests five rules\fs22\par
+{\pntext\f1\'B7\tab}\b\fs32 Fast\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 Test should be fast and run quickly,if it slow you will frequently skip those tests\fs22\par
+{\pntext\f1\'B7\tab}\fs32 If you don't run the test frequency you can't find the bug easily\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b\fs32 Independent\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 Test should depend on each other\fs22\par
+{\pntext\f1\'B7\tab}\fs32 when tests depend on each other then the first one to fail causes cascade of downstream failurs\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b\fs32 Repeatable\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 Test should be repeatable in any enviroment(like without internet traveling in train)\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b\fs32 Self-Validating \b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 The test should have a boolean output.Either they pass or fail\fs22\par
+{\pntext\f1\'B7\tab}\fs32 You should not have to read through a log file to tell whether test pass\fs22\par
+{\pntext\f1\'B7\tab}\fs32 you should not have to manually compare two difference text files to see whether the test pass\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b\fs32 Timely \b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\fs32 Unit tests should be written just before the production code that makes them pass \fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\b\fs32 Unit testing-\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs32 testing indvidual component of software application\fs22\par
+{\pntext\f1\'B7\tab}\par
+}
+ 
