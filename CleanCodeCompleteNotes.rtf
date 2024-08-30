@@ -1,0 +1,1194 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\listtable 
+{\list\listhybrid
+{\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f1\jclisttab\tx0}
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'01.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'02.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc3\leveljc0\levelstartat1{\leveltext\'02\'03.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc2\leveljc0\levelstartat1{\leveltext\'02\'04.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc1\leveljc0\levelstartat1{\leveltext\'02\'05.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'06.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'07.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc23\leveljc1\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f1\jclisttab\tx0}\listid1 }}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs40\lang9\tab Chapter-1 Clean Code\fs28\par
+
+\pard\sa200\sl276\slmult1 There Will Be Code\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Code represent the detail of requirements some level detail cannot ignored when it is executing that is programming\b\par
+{\pntext\f1\'B7\tab}\b0 Abstraction(quality) of our language will increase ,domain-specific languages will grow,but it will not eliminate the code\b\par
+{\pntext\f1\'B7\tab}\b0 Code should be in a formal\b\par
+{\pntext\f1\'B7\tab}\b0 Code really language which ultimately express the requirement\b\par
+{\pntext\f1\'B7\tab}\b0 never eliminate necessary code - so there will be code\tab\b\par
+
+\pard\sa200\sl276\slmult1 Bad Code\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 In the late 80s (killer app) is shut down because of bad code\b\par
+{\pntext\f1\'B7\tab}\b0 huge mess in code when added more feature code got worse , this could not manage so long - bad code will bought your product down\b\par
+{\pntext\f1\'B7\tab}\b0 obstraction many times that is \b wadding \b0 that time you go throught the bad code -strugle to find hoping some hints and clues. we will see many sensless code\b\par
+{\pntext\f1\'B7\tab}\b0 Dont leave the messy code to be cleaned later , Later equals never\b\par
+
+\pard\sa200\sl276\slmult1\par
+Total Cost of Owning  a Mess\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1\b0 Messy code be very fast at beginning of a project but moving in a snail pace\b\par
+{\listtext\f0 1\tab}\b0 Every change in the code add the knot in code \b\par
+{\listtext\f0 2\tab}\b0 mess of code make productivity will be zero , management will add the more staff to the project that make more difficult for the all so that will not be solution\b\par
+{\listtext\f0 3\tab}The Grand Redesign in the sky\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\ilvl8\fi-360\li1080\sa200\sl276\slmult1\b0 Redesign takes more time rather we can clean that code that could be better\b\par
+{\listtext\f0 1\tab}\b0 Spending time keeping your code clean is not just cost efficient it matters of professional survival\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1 Attitude\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1\b0 Never blame others for your messy code , comminucate your doubts without shyness\b\par
+{\listtext\f0 1\tab}\b0 In product everyone should clean code because every one wants the clean code\b\par
+{\listtext\f0 2\tab}\b0 We should always explain about the messy of code to the manager it is matter of proffesionalism\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1 The Primal Conundrum\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1\b0 The way to make the deadline to finish only one way to go fast is to keep the code as clean at all time\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1 The Art of Clean code\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1\b0 Only way go fast  keep your code clean\b\par
+{\listtext\f0 1\tab}\b0 Writing clean code is lot like painting a picture\b\par
+{\listtext\f0 2\tab}\b0 Code sense is the key ,some born with it,some fight to acquire it\b\par
+{\listtext\f0 3\tab}\b0 Who writies the clean code is an artist\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1 What is clean code\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1 Bjarne Stroustrup\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1440\sa200\sl276\slmult1\b0 Bad code temps to mess code grows\b\par
+{\listtext\f0 1\tab}\b0 Clean code should simple and efficient\b\par
+{\listtext\f0 2\tab}\b0 error handling should be completed\b\par
+{\listtext\f0 3\tab}\b0 discpline of paying attention to the details\b\par
+{\listtext\f0 4\tab}\b0 should as minimal dependency\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1 Grady Booch\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1440\sa200\sl276\slmult1\b0 Clean code is simple and direct\b\par
+{\listtext\f0 1\tab}\b0 Clean code reads like well written prose(Spoken language)\b\par
+{\listtext\f0 2\tab}\b0 It should be crisp(without unecessary detail) abstraction(quality) and straight forard lines of control\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1\ldblquote Big\rdblquote  Dave Thomas\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1440\sa200\sl276\slmult1\b0 Clean code can be read and enhanced by developer rather than original author\b\par
+{\listtext\f0 1\tab}\b0 Smaller code is better for clean code\b\par
+{\listtext\f0 2\tab}\b0 Meaningful names , code without testcase is not clean\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1 Michael Feathers\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1440\sa200\sl276\slmult1\b0 Clean code always looks like it was written by someone who cares\b\par
+{\listtext\f0 1\tab}\b0 No one can enhance better\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1 Ron Jeffries\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1440\sa200\sl276\slmult1\b0 Runs all the testcase\b\par
+{\listtext\f0 1\tab}\b0 contains no duplication\b\par
+{\listtext\f0 2\tab}\b0 Express all the design that are in the system\b\par
+{\listtext\f0 3\tab}\b0 minimize the number of entities such as classes methods fuction a like\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1 Ward Cunningham\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1440\sa200\sl276\slmult1\b0 Clean code is called beautiful code\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1 Schools of Thoughts\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1\b0 To make clean code - clean variable name , clean function ,clean class etc...\b\par
+{\listtext\f0 1\tab}\b0 we are only right everyone has their unique way of teaching and they are also right.\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1 We are authors\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1\b0 next time you write a line of code remeber your an author writing for readers who will judge the efforts\b\par
+{\listtext\f0 1\tab}\b0 making it easy to read actually makes it easier to write\b\par
+{\listtext\f0 2\tab}\b0 you cannot write the code if you cannot read the surrounding code\b\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1 The Boy Scoute Rule\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li1080\sa200\sl276\slmult1\b0 Leave the campground cleaner than you found it - dont always \b\par
+{\listtext\f0 1\tab}\b0 change one variable name for better\b\par
+{\listtext\f0 2\tab}\b0 break up one function that is to large\b\par
+{\listtext\f0 3\tab}\b0 clean up small duplications\b\par
+{\listtext\f0 4\tab}\b0 clean up composite if statement\b\par
+
+\pard\sa200\sl276\slmult1 ------------------------------------------------------------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\fs40 Chapter 2 - Meaningful Names\fs28\par
+
+\pard\sa200\sl276\slmult1\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Use Intention-Revealing Names\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Name of variable,function or class should answer question -why it exist,what it does,how it is used\par
+{\pntext\f1\'B7\tab}if name requireds a comment the names reveals its intent\par
+{\pntext\f1\'B7\tab}it should reveal the intent\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Avoid Disinformation\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Programmers must avoid leaving false clues that obsecure the meaning of code\par
+{\pntext\f1\'B7\tab}Like example if you word accountList then it should be list not a word or something else\par
+{\pntext\f1\'B7\tab}wrong spelling leads to disInformation\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Make Meaningful Distinctions\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 You cant use same name to refer to two different things in the same scope\par
+{\pntext\f1\'B7\tab}the change of one word should differ in meaning and words without adding the ,a , an like adding s in the end to the words\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Use Pronounceable Names\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Name should be pronuncable and communicatable\par
+{\pntext\f1\'B7\tab}Example generation_time_snap is better than using gentmsmp\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Use Searchable Names\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 It should be easily for findable and when it is useful name but atleast it searchable\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Avoid Encodings\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Encodings adds an extra burden\par
+{\pntext\f1\'B7\tab}\b Hungrain Notaion\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Should not mention the data type before the variable name, because the compiler will remember it\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Member prefixes\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 You also don\rquote t need to prefix member variables with m_ anymore your classes and function should be small enough that you dont need them\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Interface and Implementation\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 I dont want my user to know that i am using the interface or abstract class something\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Avoid Mental Mapping\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Reader shouldn't have to mentally translate your names into other names\par
+{\pntext\f1\'B7\tab}single letter names for loop counter is traditional but it is a poor choice\par
+{\pntext\f1\'B7\tab}Clarity is king write code that other should understand\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Class Names\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1  Class name should have noun or noun phrase like Customer, WikiPage,\par
+{\pntext\f1\'B7\tab}Account, and AddressParser.\par
+{\pntext\f1\'B7\tab}Class name should not be verb\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Method Names\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Method should have verb or verb pharse name like,,,postPayment,deletePage,\par
+{\pntext\f1\'B7\tab}named for their values and prefixid with get, set and is according to java beans standard\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Don't be cute\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Dont use naming for entertainment purpose\par
+{\pntext\f1\'B7\tab}Choose clarity over entertainment\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Pick one word per concept\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 pick one word for one concept over the module\par
+{\pntext\f1\'B7\tab}Example fetch,retrieve,get these three have the same meaning choose one from this and use over the module\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Dont pun\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Avoid using the same word for two different concept and purpose\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Use solution domain names\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Use computer science term eg math term,pattern name and algorithm names\par
+{\pntext\f1\'B7\tab}people who reads your code will be programmers\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Use Problem domain name\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 When there is no programming name then use problem domain name\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Use Meaningful Context\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Some name may be meaningful but some may not if it is not add meaningful context\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Dont add gratuitous context\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 dont use gratutious context\par
+{\pntext\f1\'B7\tab}dont use gsd in every class name like GSDaccountAddress -17 characters are redudant or irrelavant\par
+{\pntext\f1\'B7\tab}Add like accountAddress,customerAddress is fine because resulting name are more precius which is the pointing of all naming\b\par
+
+\pard\sa200\sl276\slmult1\b0 ------------------------------------------------------------------------------------------------\b\par
+
+\pard\sa200\sl276\slmult1\qc\fs40 Chapter-3 Functions\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs28 Small\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 1st rule function should be small\par
+{\pntext\f1\'B7\tab}Function should hardly ever be 20 lines long\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Blocks and indenting\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 block within if statament , else and while statement should be one line long\par
+{\pntext\f1\'B7\tab}function should not large enough to hold nested stucture\par
+{\pntext\f1\'B7\tab}indent level function should not greater than one or two\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Do one thing\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 function should do one thing.They should do it well they should do it only\par
+{\pntext\f1\'B7\tab}simply it means one function do only one thing more that the function contains then that should be spillited\par
+{\pntext\f1\'B7\tab}\b Sections within function\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 generatePrimes function is divided into section such as decalaration and intialization etc...\par
+{\pntext\f1\'B7\tab}it is symptoms of doing more than one things this cannot reasonable\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b One Level of Abstraction Function\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Statement within our functions all at the same level of abstraction\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\b Reading code from top to bottom : The Stepdown Rule\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1 function that should be in\b  \b0 single level of abstraction it is key to keep function keep it short and to keep it to do one thing\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Switch Statement\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 In nature switch statement always do n things but we cannot avoid switch statement but we avoid repeation and we can do with polymorphism\par
+{\pntext\f1\'B7\tab}Use them only when necessary\par
+{\pntext\f1\'B7\tab}use abstract factory design pattern and create polymorphism objects\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Use Descriptive names\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 The smaller and more focused function is the easier it is to choose a descriptive name\par
+{\pntext\f1\'B7\tab}\b Ward\rquote s principle\b0 : \ldblquote You know you are working on clean code when each routine turns out to be pretty much what you expected.\rdblquote\par
+{\pntext\f1\'B7\tab}A long descriptive name is better than the short name\par
+{\pntext\f1\'B7\tab}A long descriptive name is better than long descriptive command\par
+{\pntext\f1\'B7\tab}use multiple words for the function name to say what it does\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Function Argument\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 one or two argument ok three arguments should avoid were possible where more than three use in very special justification\par
+{\pntext\f1\'B7\tab}using more argument make testing challenge\par
+{\pntext\f1\'B7\tab}\b Common monadic forms\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 there are two very common reason to pass single argument in a function\par
+{\pntext\f1\'B7\tab}1st is when u are asking question in boolean type\par
+{\pntext\f1\'B7\tab}2nd is transforming into something else and returning it\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Flag Argument\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Flag arguments are ugly \par
+{\pntext\f1\'B7\tab}It does one thing if the flag is true and another if the flag is false!\par
+{\pntext\f1\'B7\tab}should not use flag argument\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Dyadic Functions\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 it will be better to convert dyadic to monadic\par
+{\pntext\f1\'B7\tab}example writeField(outputStream, name) can convert to monadic by any one of these methods\par
+{\pntext\f1\'B7\tab}Make the writeField a member function of outputStream class so that you can say outputStream.writeField(name)\par
+{\pntext\f1\'B7\tab}Or make the outputStream a member variable of the current class so that you don\rquote t have to pass it, like this writeField(name).\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Triadic\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Should not use three arguments ,it is difficult to understand,you should think very carefull when creating a triadic argument\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Argument objects\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 function seems need more than two or three arguments make some argument wrapped in class of their own\par
+{\pntext\f1\'B7\tab}Circle makeCircle(double x, double y, double radius);\par
+{\pntext\f1\'B7\tab}Circle makeCircle(Point center, double radius);\par
+{\pntext\f1\'B7\tab}both doing same thing 2nd one wraps the number of argument\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Arguments List\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 it is passing list in the argument\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Have no side effects\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 function promise to do one thing but also do other hidden thing it will make unexpected changes to variable of its own class\par
+{\pntext\f1\'B7\tab}function only do mentioned in the function name\par
+{\pntext\f1\'B7\tab} This function uses a standard algorithm to match a userName to a password. It returns true if they match and false if anything goes wrong. But it also has a side effect.\par
+{\pntext\f1\'B7\tab}\b Output arguments\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 For example-   appendFooter(s)   (it is not obvious)\par
+{\pntext\f1\'B7\tab}public void appendFooter(StringBuffer report)  by seeing the function declaration only it tells what it does.\par
+{\pntext\f1\'B7\tab}Better use it like   report.appendFooter(); \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Command Query operation\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 function should either do something or answer something but not both (change state of object or return some information)\par
+{\pntext\f1\'B7\tab}Doing both leads to confustion\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Prefered Exception to returning the error code\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Returning error code from command function is a violation\par
+{\pntext\f1\'B7\tab}when your return error code you create the problem that the caller must deal with immediately\par
+{\pntext\f1\'B7\tab}\b Extract try/catch Blocks\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Try/catch blocks that are ugly and confuse the structure of the code and mix error processing with normal processing. So it is better to extract the bodies of the try and catch blocks out into \tab functions of their own\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Error Handiling is one thing\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 function that handles error should do nothing else\par
+{\pntext\f1\'B7\tab}Try keyword should be in the first line of the function, and there should be nothing after the finally/catch block\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Dependency Magnet\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Some class or enum in which all the error codes are defined classes like this are dependency magnet\par
+{\pntext\f1\'B7\tab}Many other class must import and use them\par
+{\pntext\f1\'B7\tab}When error enum changes all those classes need to be recompiled and redeployed\par
+{\pntext\f1\'B7\tab}programmers dont want to add new errors\tab because then they have to rebuild or redeploy So they reuse old error codes instead of adding new ones\par
+{\pntext\f1\'B7\tab}When you use exceptions rather than error codes, then new exceptions are derivatives of the exception class. They can be added without forcing any recompilation or redeployment\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Dont repeat yourself\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 There should not have duplication function by the body also not only the fuction name\par
+{\pntext\f1\'B7\tab}It main aim to reduce repetition\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Structured Programming\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 every function should have one entry and one exit\par
+{\pntext\f1\'B7\tab}By rules there should be only one return statement,no break or continue statement in loop and never ever any goto statement\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b How do you write function like this\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Clean up the code once it done\par
+
+\pard\sa200\sl276\slmult1 ------------------------------------------------------------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs40 Chapter-4 Comments\fs28\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Code explantion should be done using comments\par
+{\pntext\f1\'B7\tab}Comments are always failure because we can express without them\par
+{\pntext\f1\'B7\tab}needed time only use the comments \par
+{\pntext\f1\'B7\tab}\b Comments Do Not make up for bad code\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 When you trying to use in bad code like messy code then u can directly clean the code rather than commenting \par
+{\pntext\f1\'B7\tab}Rather than spending the time in writing comments to the messy code better you can cleaning the messy\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Explain yourself in code\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 It takes only few seconds of thought to explain most of your intent of code by your commenting\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Good Comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Some comments are necessary\par
+{\pntext\f1\'B7\tab}only true good comment is an comment\par
+{\pntext\f1\'B7\tab}\b Legal Comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Sometime our coorprate coding standards fource us to write certain comments for legal reason\par
+{\pntext\f1\'B7\tab}example copyrights and authorship statements are necessary\tab\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Informative Comments\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Sometime useful to provide basic information with comments\par
+{\pntext\f1\'B7\tab}use the name of function to convey the information were possible\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Explaination of Intent\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Sometime a comments goes beyond just useful information about the implementation and provide the intent behind the decision\tab\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Clarification\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Sometimes it helps to translate the meaning of some uncertain argument or return value into something that's readable\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Warning of Consquence\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Sometime it is useful to warn other programmers about certain consquence\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Todo Comments\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Todo comments explain why the function has implementation and what the function future should be\par
+{\pntext\f1\'B7\tab}TODOs are jobs that the programmer thinks should be done, but for some reason can\rquote t do at the moment\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Amplification\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 A comment is used increase the importance that may otherwise seem inconsequenial(Not important)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Bad Comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 They are crutches or excuses for poor code or justifications for insufficient decisions \par
+{\pntext\f1\'B7\tab}\b Mumbling\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 If you decide to write a comment then spend the time necessary to make sure it is best comment you can write\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Redundant comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 simple function with a header comment that is completely redundant\par
+{\pntext\f1\'B7\tab}unnecessary comment \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Misleading comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Sometime with all the best intentions a programmer makes a statement in his comments isnt enough to accurate\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Mandated Comments\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 It is just plain silly to have a rule that says every function must have javadoc or every variable must have comment \par
+{\pntext\f1\'B7\tab}It will clutter(mess of code) up the code\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Journal comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Sometime the people add a comment to the start of module every time they edit it . so it make not sense\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Noisy comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 that comment is nothing but is noisy \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Dont use a comment when you can use function or variable\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Sometimes we can able to express the comment we are giving in code with a meaningful name or function.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Poistion maker\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Sometime programmers like a mark a particular poistion in a source file\par
+{\pntext\f1\'B7\tab}Example- // Actions ////////////////////////////////// - it makes more noisy\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Closing Brace Comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Don't use comments for marking the end to condition statement and loop statement at the end of the braces\par
+{\pntext\f1\'B7\tab}while () \{\par
+{\pntext\f1\'B7\tab} \} //while\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Attributions and Bylines\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Source code control system are very good at remembering who added what and when\par
+{\pntext\f1\'B7\tab}Example- /* Added by Rick */ - it used to pollute the code\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Comment out code\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 who see that commented-out code won\rquote t have the courage to delete it.\par
+{\pntext\f1\'B7\tab}They\rquote ll think it is there for a reason and is too important to delete -bad bottle win\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Html comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 HTML in source code comments is an abomination(disguest)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Nonlocal Information\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 if you must write a comment then make sure it describe the code it appear near \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b To much Information\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Don\rquote t put interesting historical discussions or irrelevant descriptions of details into your comments\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Function Header\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Short function dont need much description\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Javadocs in Nonpublic code\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 As useful as javadocs are for public APIs, they are anathema to code that is not intended for public consumption\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Inobvious  connection\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\b0 The connection between a comment and the code it describes should be obvious(clear). \par
+
+\pard\sa200\sl276\slmult1 ------------------------------------------------------------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs40 Chapter-5 Formatting\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs28 Purpose of Formatting \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Code formating important and is about communication and communction is profesional developer first order business\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Vertical Formatting\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Small files are usually easier to understand than the large file\par
+{\pntext\f1\'B7\tab}\b The Newspaper Metaphor\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 the topmost part of the source file should provide the highlevel concept and algorithm (Topdown apporach)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Vertical Opennes between concepts\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Nearly all code is read left to right and top to bottom\par
+{\pntext\f1\'B7\tab}There are blank lines that are separate the package declaration, the imports and each of functions\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Vertical Density \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 lines of code that are tightly related should appear vertically dense(by using multiple line comment)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Vertical Distance\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 When one function to next function scrolling make long so concept that are closely related should be keep vertically close to each other\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b Variable Declaration\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\sa200\sl276\slmult1 Variable should be declared as close to their usage as possible\par
+{\pntext\f1\'B7\tab}local variable should appear a top of each function\par
+{\pntext\f1\'B7\tab}Control variable for loop should decalred within the loop statement\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b Instance variable\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\sa200\sl276\slmult1 Instance variable should be decalared in top of the class\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b Dependent function\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\sa200\sl276\slmult1 If one function call other function they should vertically close\par
+{\pntext\f1\'B7\tab}the caller should be above the calle\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b Conceptual Affinity\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\sa200\sl276\slmult1 Certain bits of code want to be near other bits.they have conceptual affinity(understandable)\par
+{\pntext\f1\'B7\tab}Some concept function(different meaning in differnt field) can be kept in less vertical distance\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\b Vertical Ordering\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1 function call dependencies to point in the downward direction\par
+{\pntext\f1\'B7\tab}function called should be below the function does the calling\par
+{\pntext\f1\'B7\tab}we expect the most important concepts to come first and low level detail to come last\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Horizontal formatting\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Limit of 120 character long could be the line\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b Horizontal Openness and Density\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\sa200\sl276\slmult1 We use horizontal white space to associate strongly related things and disassociate things that are more weakly related\par
+{\pntext\f1\'B7\tab}surrounded the assignment operartor with white space to accentuate(noticable) them\par
+{\pntext\f1\'B7\tab}on the other hand should not put space between the function name and opening parthenthesis .because they are closely related\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b Horizontal Alignment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\sa200\sl276\slmult1 The horizontal alignment is useless\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b Indentation\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\sa200\sl276\slmult1 Indent to show hierarchy and structure making the code easier to understand\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b Dummy scope\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\sa200\sl276\slmult1 fooled by a semicolon silently sitting at the end of a while loop on the same line. Unless you make that semicolon visible by indenting it on it\rquote s own line, it\rquote s just too hard to see\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b Team Rules\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\sa200\sl276\slmult1 Every programmer has his own favorite formatting rules but if he works in a team then should be in team rules\par
+
+\pard\sa200\sl276\slmult1 ------------------------------------------------------------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs40 Chapter-6 Objects & Data Structures\fs28\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Data abstraction\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Hiding implementation is about abstraction\par
+{\pntext\f1\'B7\tab}Hiding implementation is not just a matter of putting a layer of functions between the variables. \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Data/object Anti-Symmetry\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Object is used hide their data behind the abstraction and expose the funtion but data structure expose their data but no meaningful function\par
+{\pntext\f1\'B7\tab}\b Procedural code (\b0 code is using datastructure\b )\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Makes it easy to add new functions without changing the existing data structure\par
+{\pntext\f1\'B7\tab}Makes it hard to add new data structures because all the functions must change\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b OO code(\b0 code using object-oriented\b )\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Makes it hard to add new functions because all the existing classes must change\par
+{\pntext\f1\'B7\tab}Makes it easy to add new classes without changing existing function\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 everythings an object is a myth , some times you really do want simple data structure with procedural operating system\par
+{\pntext\f1\'B7\tab}\b The law of demeter\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 the law of demeter says that a method F of a class C should only call the methods\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1 class C\par
+{\pntext\f1\'B7\tab}An object created by F\par
+{\pntext\f1\'B7\tab}An object passed as an argument of F\par
+{\pntext\f1\'B7\tab}An object instance variable of C\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 other words talk to friends not strangers\par
+{\pntext\f1\'B7\tab}\b Train Wrecks\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b a series of method calls or a chain where each call return object that can be used to call new method\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372 final String outputDir = ctxt.options.scratchDir.absolutePath;\par
+{\pntext\f1\'B7\tab}\b Why it violate the law? \b0 The method received the parameter car, so all method calls on this object are allowed. But, calling any methods (in this case getAddress() and getStreet()) on the object returned by getOwner() is not allowed\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li2160\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372 Options opts = ctxt.getOptions();\par
+{\pntext\f1\'B7\tab}File scratchDir = opts.getScratchDir();\par
+{\pntext\f1\'B7\tab}final String outputDir = scratchDir.getAbsolutePath();\par
+{\pntext\f1\'B7\tab}LoD violations occur when a module is required to navigate through multiple levels of object relationships, indicating that it is aware of too much about other modules' internal structures.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372\b Hybrids\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372 hybrid structure that are half object and half data structure\par
+{\pntext\f1\'B7\tab}Such hybrids make it hard to add new functions but also make it hard to add new data structures\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372\b Hiding Structure\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372 objects with behavior, you shouldn't navigate through them to access their internals (Avoid  Direct access)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372\b Data Transfer Object\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372 the quintessential(most perfect) form of data Structure is class with public variable and no function sometimes called as DTO\par
+{\pntext\f1\'B7\tab}DTO are very useful Structures especially when communicating  with database or parsing message froms sockets\par
+{\pntext\f1\'B7\tab}becomes the first in series of translation stage that convert raw data in a database into object in application code\par
+{\pntext\f1\'B7\tab}\b Beans \b0 have private variable manipulated by getter and setter\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372\b Active Record\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\ri-1442\sa200\sl276\slmult1\tx7668\tx8378\tx9372 Active record are special form DTO's \par
+{\pntext\f1\'B7\tab}it creates hybrids between data structure and a object\par
+{\pntext\f1\'B7\tab}Active record as a data strucuture and to create seperate objects that contain the business rule and that hide their internal data\b\par
+
+\pard\sa200\sl276\slmult1\b0 ------------------------------------------------------------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs40 Chapter-7 Error Handling\fs28\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Error handling is crucial but should not obscure(not well known) logic\par
+{\pntext\f1\'B7\tab}\b Use Exception rather than return codes\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Return error code leads to the deeply nested structure\par
+{\pntext\f1\'B7\tab}In olden day they were using error flag -problem is-the \par
+{\pntext\f1\'B7\tab}caller must checks for errors immediately after the call\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Write Your try/catch statement first\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 try portion of a try-catch-finally statement you are starting that execution abort at any time and then resume at catch\par
+{\pntext\f1\'B7\tab}Your catch has to leave your program in a consistent state, no matter what happens in the try(catch block must handle it in such a way that the program remains stable and predictable.)\par
+{\pntext\f1\'B7\tab}Try to write tests that force exception and add behavior to your handler to satisfy your tests\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Use Unchecked Exception\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 checked exception is occurs in compile time\par
+{\pntext\f1\'B7\tab}your code literally wouldnt compile if the signature didn't match what your code could do\par
+{\pntext\f1\'B7\tab}python does'nt have checked exception\par
+{\pntext\f1\'B7\tab}checked exception is an open/closed principle violation\par
+{\pntext\f1\'B7\tab}An unchecked exception represents the error in programming logic. \par
+{\pntext\f1\'B7\tab}checked exception is use low level programming if new exception checked then add throw clause if new exception in different class then also adds in the throw class encapsulation is broken because of these\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Provide context with exception\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Each exception that you throw should provide enough context to determine the source and location of error\par
+{\pntext\f1\'B7\tab}so you can get stack trace from any exception\par
+{\pntext\f1\'B7\tab}Create informative error message and pass them along with your exception\par
+{\pntext\f1\'B7\tab}If you are logging in your application, pass along enough information to be able to log the error in your catch.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Define Exception classes in terms of callers needs\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Many way to classify the error 1. classify by their source 2.Or their type of failure\par
+{\pntext\f1\'B7\tab}Exception should written in a way that handles all that can go wrong when users of code calls it instead of writting from the point of failurs or type of failure\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Define the normal flow\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Above steps will cleanly seperate bussiness logic from error handiling\par
+{\pntext\f1\'B7\tab}instead of using exception everywhere it is better to define a flow in which the caller doesn't have to be suprised with what gets returned from the calle\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Don't Return Null\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 if your tempted to return null from a method consider throwing an exception or returning a special case object instead\par
+{\pntext\f1\'B7\tab}All it takes is one missing null check to send an application spinning out of control. \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Don't Pass null\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 returning null from methods is bad but passing null into method is worse\par
+{\pntext\f1\'B7\tab}When passing null as an argument we'll get a null pointer exception\par
+{\pntext\f1\'B7\tab}How can fix it? , We could create a new exception type and throw it. but better way is define handler for InvalidArgumentException  ... but any way still we get runtime error\par
+{\pntext\f1\'B7\tab}most programming languages there is no good way to deal with a null that it passed by a caller accidentally\par
+
+\pard\sa200\sl276\slmult1 ------------------------------------------------------------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs40 Chapter-8 Boundaries\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs28 Using third party code\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 There is natural tension between the provider of an interface and the user of an interface\par
+{\pntext\f1\'B7\tab}if you use a boundary interface like map,keep it inside the class or close family of classes where it is used\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Exploring and learining boundaries\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Third party code helps us get more functionality derived in less time\par
+{\pntext\f1\'B7\tab}it is good idea to write some tests to learn and understand how to use a third party code\par
+{\pntext\f1\'B7\tab}Instead of experimenting and trying out the new stuff in our production code, we could write some tests to explore our understanding of the third-party code\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Learning log4j\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 log4j package rather than our own custom-build logger\par
+{\pntext\f1\'B7\tab}log4j is used by developer to keep track of what happen in their software application or online services,It basically huge journal of the activity of system or application\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Learning tests are better than free\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 The learning tests were precise experiment that helped increases our understanding\par
+{\pntext\f1\'B7\tab}When there are new releases of the third party package we run the learning tests to see whether there are behavioral difference\par
+{\pntext\f1\'B7\tab}learning tests verify that the third-party packages we are using work the way we expect them to\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Using Code That Does Not Yet Exists\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 if your code is depends upon some other code , even if that code does not exist yet,we can build an interface and connect interface with our code so that later on, the code which we are dependent upon comes into existence only the interface needs to be changed\par
+{\pntext\f1\'B7\tab}one good things about writting the interface we wish we had is that it's under our control.This helps keep client code clean more readable and focused what it is trying to accomplish\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Clean boundaries\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 When we use code that is out of our control , special care must be taken to protect our investment and make sure further change is not too costly\par
+{\pntext\f1\'B7\tab}We should avoid letting too much of our code know about the third party particularly\par
+
+\pard\sa200\sl276\slmult1 ------------------------------------------------------------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs40 Chapter-9 Unit Tests\fs28\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 The Three Laws of TDD\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b First Law:-\b0  You may not write production code until you have written failing unit test \par
+{\pntext\f1\'B7\tab}\b Second Law:- \b0 You may not write more a unit test than is sufficient to fail and not compiling is failing (Write just enought test to fail)\par
+{\pntext\f1\'B7\tab}\b Third Law:-\b0  You may not more production code than is sufficient to pass the currently failing test (Dont add extra features or code that isn't required)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Keeping tests clean\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Test code should maintained  to same standard of quality as their production code\par
+{\pntext\f1\'B7\tab}As you modify the production code , old test starts to fail and mess in test code makes it hard to get those tests to pass again\par
+{\pntext\f1\'B7\tab}It requires thought,design and care.It must be kept as clean as production code\par
+{\pntext\f1\'B7\tab}\b Test Enable the -ilities\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 it is unit test that keeps our code flexible,maintainble and reusable\par
+{\pntext\f1\'B7\tab}No matter how flexible a production code is without a test case there will be a fear that the changes will introduce bugs.\par
+{\pntext\f1\'B7\tab}Test enables all the -ilities(set of qualities) because test enable change\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Clean Test\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 what makes clean test? Readability is more important in unit test than its production code\par
+{\pntext\f1\'B7\tab}what makes test readable? the same thing that makes all code readable:clarity,simplicity and density of expression\par
+{\pntext\f1\'B7\tab}The BUILD-OPERATE-CHECK2 pattern is made obvious by the structure of these tests\par
+{\pntext\f1\'B7\tab}Each of the test is clearly splits into three parts\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Build the test data\par
+{\pntext\f1\'B7\tab}Operate the test data\par
+{\pntext\f1\'B7\tab}Checks the operation yielded the expected results\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Notice that the vast majority of annoying detail has been eliminated\par
+{\pntext\f1\'B7\tab}The test get right to point and use only the data types and function that truly need\par
+{\pntext\f1\'B7\tab}\b Domain specfic testing language\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 we build up a set of function and utilities that makes use of those APIs and that make the tests more convienient to write and easier to read\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b A dual standard\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 The code within the testing API does have a different set of engineering standards than the production code\par
+{\pntext\f1\'B7\tab}It must be still simple and expressive but it need not be as efficeint as production code\par
+{\pntext\f1\'B7\tab}there are things that you might never do in production enviroment that are perfectly fine in test enviroment\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b One Assert per Test\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Every test function in a JUnit(test automation framework used in java for unit testing ) test should have one and only assertion statement (Statement that part of argument)\par
+{\pntext\f1\'B7\tab} Because it is easy to understand\par
+{\pntext\f1\'B7\tab}Number of assert it should be minimized\par
+{\pntext\f1\'B7\tab}\b Single concept per test\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 We want to test a single concept in each test function\par
+{\pntext\f1\'B7\tab}This test should be split up into three independent tests because it tests three independent things\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b FIRST\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Clean tests five rules\par
+{\pntext\f1\'B7\tab}\b Fast\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Test should be fast and run quickly,if it slow you will frequently skip those tests\par
+{\pntext\f1\'B7\tab}If you don't run the test frequency you can't find the bug easily\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Independent\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Test should not depend on each other\par
+{\pntext\f1\'B7\tab}when tests depend on each other then the first one to fail causes cascade of downstream failurs\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Repeatable\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Test should be repeatable in any enviroment(like without internet traveling in train)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Self-Validating \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 The test should have a boolean output.Either they pass or fail\par
+{\pntext\f1\'B7\tab}You should not have to read through a log file to tell whether test pass\par
+{\pntext\f1\'B7\tab}you should not have to manually compare two difference text files to see whether the test pass\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Timely \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Unit tests should be written just before the production code that makes them pass \par
+{\pntext\f1\'B7\tab}if you write tests after the production code then you may find the production code hard to test\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\b Unit testing-\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 testing indvidual component of software application\par
+
+\pard\sa200\sl276\slmult1 ------------------------------------------------------------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs40 Chapter-10 Classes\fs28\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Class Organization\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Class should beign with list of variables , public static constant,if any should come first (you should place any constant that are public and static at the top of class)\par
+{\pntext\f1\'B7\tab}private static variable followed by private instance variable\par
+{\pntext\f1\'B7\tab}Start placing all public function right after constant and variables\par
+{\pntext\f1\'B7\tab}After listing the public function place any private utility function that are called by the public function\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Encapsulation\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Sometimes we need to make a variable or utility function protected so that it can be accessed by the test\par
+{\pntext\f1\'B7\tab}if the test in the same package need to call a function or access a variable we'll make it protected or package scope\par
+{\pntext\f1\'B7\tab}it looks for a way maintain privacy\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Classes Should be small\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 The first rule of class is that they should be small\par
+{\pntext\f1\'B7\tab}With function we measured size by counting \b physical lines\b0 .With classes we use different measure.We \b count responsibilities\b0\par
+{\pntext\f1\'B7\tab}\b The Single Responsiblity Principle(SRP)\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 The SRP states that a class or module should have \b one and only reason to change\par
+{\pntext\f1\'B7\tab} \b0 We want our system to be composed of many small classes,not few largers classes\b\par
+{\pntext\f1\'B7\tab}\b0 Each class encapsulation a single responsbility and has a single reason to change\b\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 cohesion(fit together well)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\b0 Class should have small number of instance variable\b\par
+{\pntext\f1\'B7\tab}\b0 Each method of class should manipulate one or more of those varibles.\b\par
+{\pntext\f1\'B7\tab}\b0 When cohesion is high it means that the method and variable of the class are co-dependent and hang together as logical whole\b\par
+{\pntext\f1\'B7\tab}You should try to separate the variables and methods into two or more classes such that the new classes are more cohesive\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Maintaing cohesion results in many small classes\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\b0 Breaking large function into smaller function causes a proliferation(Rapid multiplication) of classes\b\par
+{\pntext\f1\'B7\tab}\b0 When class losses cohesion splits them into different classes\b\par
+{\pntext\f1\'B7\tab}\b0 breaking a large function into smaller function often give us the opportunity to split several smaller classes out as well\b\par
+{\pntext\f1\'B7\tab}\b0 This gives our program a much better organization and a more transparent structure\b\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Organizing for change\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b0 In a clean system we organize our classes so as to reduce the risk of changes\b\par
+{\pntext\f1\'B7\tab}\b0 opening a class to modification introduces the risk of breaking existing code\b\par
+{\pntext\f1\'B7\tab}\b0 modifying a class can impact other parts of the code that depends on it\b\par
+{\pntext\f1\'B7\tab}\b0 changes may introduce new bugs or issues\b\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Isolating from change\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b0 there are concrete classes which contain implementation detail(code) and abstract class\b\par
+{\pntext\f1\'B7\tab}\b0 By minimizing coupling in this way our classes to another class design principle known as the dependency inversion principle(DIP)   (reduces the dependency of one class to another class)\b\par
+{\pntext\f1\'B7\tab}\b0 In the essence DIP says that our classes should depend upon abstraction not on concrete detailss\b\par
+{\pntext\f1\'B7\tab}\b0 The changes should not affect the other classes\b\par
+
+\pard\sa200\sl276\slmult1\b0 ------------------------------------------------------------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs40 Chapter-17 smell & Heuristics\fs28\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Comments\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Inappropriate Information\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Inappropriate information like source code control system,your issue tracking system or any other record-keeping system\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Obsolete comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 A comment that has gotten old,irrelevant and incorrect is obsolete\par
+{\pntext\f1\'B7\tab}Comment gets old quickly , it is best not to write comment that will become obsolete.\par
+{\pntext\f1\'B7\tab}if you find an obsolte comment it is best to update it or get rid(eliminate) of it as quickly as possible\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Redundant Comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 A comment with unnecessary information.\par
+{\pntext\f1\'B7\tab}The comment should say that the code cannot say\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Poorly Written Comment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Going to write a comment take the time to make sure it is the best comment you can write \par
+{\pntext\f1\'B7\tab}Choose your word carefully ,use correct grammar and punctuation\par
+{\pntext\f1\'B7\tab}Don't ramble(writting in a confused way) ,Don't state the obvious be brief\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Comment-out code\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Don't Comment out code,because coworker can be afraid of touching those code and simply rots(go bad) the code\par
+{\pntext\f1\'B7\tab}When you see commented-out code delete it! dont worry the source code control system still remebers \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Enviroment\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Build requires more than one step\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Building a project should be single trivial operation\par
+{\pntext\f1\'B7\tab}You should not have to check many little piece out from source code control\par
+{\pntext\f1\'B7\tab}Build should be in one command to run and one command to check\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Tests require more than one step\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 You should be able to run all the unit test with just one command\par
+{\pntext\f1\'B7\tab}In the best case you can run all the tests by clicking on one button on IDE\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Function \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Too many arguments\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Function should have small number of argument, No argument is best followed by one ,two and three more than three is questionable should be avoided,\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Output arguments\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Reader expect arguments to be inputs not outputs\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Flag arguments\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Should avoid flag arguments passing into function\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Dead function\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Method that is never called is called dead function,Which should be discarded\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b General\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Multiple language in one source file\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Today's modern programming enviroments make it possible to put many different language into a single source file\par
+{\pntext\f1\'B7\tab}For example, a Java source file might contain snippets of XML, HTML, YAML, JavaDoc, English, JavaScript, and so on \par
+{\pntext\f1\'B7\tab}This confusing at best and carelessly sloppy(lack of care) at worst\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Obvious behavior is Unimplemented\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 When an obvious behavior is not implemented, readers and users of the code can no longer depended on their intution about function name\par
+{\pntext\f1\'B7\tab}they lose their trust in the original author and must fall back on reading the detail of code\par
+{\pntext\f1\'B7\tab}the result of a function or class should not be a surprise\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Incorrect behaviour at the boundaries\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 It seems obvious to say that code should behave correctly\par
+{\pntext\f1\'B7\tab}Test all the case look for every bondary condition(every end)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Overridden Safeties\tab\tab\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 It is risky to override safeties\par
+{\pntext\f1\'B7\tab}Turning off certain compiler warning may helps you get the build to succeed but at the risk of endless debugging session\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Duplication\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 DRY Principle (Dont repeat yourself)\par
+{\pntext\f1\'B7\tab}kent beck made it one of the core principle of extremming programming and called it \b "Once and only once"\b0\par
+{\pntext\f1\'B7\tab}Every time you see \b dplication \b0 in the code it represent a \b missed opprtunity for abstraction\par
+{\pntext\f1\'B7\tab}\b0 modules that have similar algorithms but that don't share similar lines of code\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Code at wrong level of abstraction\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 It is important to create abstraction that separate higher-level general concept from lower-level detailed concept\par
+{\pntext\f1\'B7\tab}We want all the lower level concept to be in the derivatives and all the higher level concept to be in the base class\par
+{\pntext\f1\'B7\tab}Good software design required that we seperate concept at different level and place them in different container\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Base Classes depending on their derivatives\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\b (base class means whose members are inherited by another class and derived class can only have one direct base class)\b0\par
+{\pntext\f1\'B7\tab}Base class should know nothing about their derivatives\par
+{\pntext\f1\'B7\tab}In the general case we want to be able to deploy derivatives and bases in different jar files\par
+{\pntext\f1\'B7\tab}And make sure the basic jar files know nothing about the contents of the derivative jar file allow us to deploy our system in discrete in independent component\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Too much information\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Well defined modules have very small interface that allow you to do a lot with little.\par
+{\pntext\f1\'B7\tab}A poorly defined interface provides lots of function that you must call so coupling is high\par
+{\pntext\f1\'B7\tab}Good software developer learn to limit what they expose at the interface of their classes and modules\par
+{\pntext\f1\'B7\tab}Hide your data.Hide your utilities function hide your constant and your temporaries,Dont create lots of protected variable and function for your subclasses\par
+{\pntext\f1\'B7\tab}Concentrate on keeping interfaces very tight and very small. Help keep coupling low by limiting information\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Dead Code\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Dead code is code that isn't executed\par
+{\pntext\f1\'B7\tab}when you find dead code,delete it\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Vertical Seperation\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Variable and function should be defined close to where they are used\par
+{\pntext\f1\'B7\tab}Local variable should be declared just above their usage and should have a vertical scope\par
+{\pntext\f1\'B7\tab}private function should be defined just below their first usage \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Inconsistency\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 If you do something a certain way do all the similar things in the same way\par
+{\pntext\f1\'B7\tab}Be carefull with convention you choose and once chosen be careful to continue to follow them\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Clutter\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Variable that aren't used, function that are never called comments that add no information and so forth\par
+{\pntext\f1\'B7\tab}All these things clutter and should be removed. keep your source files clean,Well organized and free of clutter\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Artificial coupling\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Things that don't depend upon each other should not be artificially coupled\par
+{\pntext\f1\'B7\tab}an artificial coupling is coupling between two modules that serves no direct purpose \par
+{\pntext\f1\'B7\tab}It is a result of putting a variable,constant or function\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Feature Envy (reveals a method that would work better on different class)\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 The method of class should be interested in the variable and function of the class \b they belong to\b0  and \b not \b0 the variable and functions of \b other class\par
+{\pntext\f1\'B7\tab}\b0 Method one class should not be interesting to the method of another class\par
+{\pntext\f1\'B7\tab}We want to eliminate feature envy because it exposes the internal of one class to another\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Selector Arguments\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Selector argument are combine many function into one.\par
+{\pntext\f1\'B7\tab}Dont use selector arguments because it will keep one large function that is need to be split\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Obscured Intent\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Code should not be magic or obsucre(not well known) (it shoud not block the intent of code)\par
+{\pntext\f1\'B7\tab}Code should be placed where a reader would naturally expect it to be\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Misplaced Responsiblity\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 One of the most important decision a software developer can \b make it where to put code\par
+{\pntext\f1\'B7\tab}\b0 Code should be placed where a reader would naturally expected it to be.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Inappropriate Static\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\b static method \b0 ideal for utility funtion (that performs specfic task) \b do not depend on instance data \b0 and where \b polymorphism is not needed \b0 ex:math.max(int a,int b);\par
+{\pntext\f1\'B7\tab}\b nonstatic method:\b0 It belongs to instance of class,use when the method need to access or modify instance data or should \b support polymorphism \b0 ex:method for calculating pay the varies by emplyee type\par
+{\pntext\f1\'B7\tab}\b Prefer nonstatic method for flexibility and polymorphism\b0 .\b use static methods only when you're sure they don't need to be polymorphic\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Use Explanatory Variables\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Breaks the Complex calculation into variables with meaningful names\par
+{\pntext\f1\'B7\tab}example: String key="" String Value=""  Variables 'key' and 'value' make the code purpose clear\par
+{\pntext\f1\'B7\tab}Use more explanory variables for better code clarity\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Function Names Should Say What they do\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Function names should clarity indicate their effect and whether they modify the instance or return new one\par
+{\pntext\f1\'B7\tab}if modify new instance : use names like 'addDaysTo'\par
+{\pntext\f1\'B7\tab}if returning new instance: use names like 'daysLater'\par
+{\pntext\f1\'B7\tab}Ensure the function name convey what it does without needing to check the implementation or documentation\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Understand the agorithm\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\b Before you consider yourself to be done \b0 with function, make sure you \b understand how it works\b0\par
+{\pntext\f1\'B7\tab}It is common iteratively test and refine code make it work\par
+{\pntext\f1\'B7\tab}\b passing test case is not enough \b0 ensure you \b fully understand how the function work \b0 and that the solution is correct\par
+{\pntext\f1\'B7\tab}Refractor the function to make it clean and expressive which helps in understanding and confirming its correctness\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Make logical dependencies physical\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 If one modules depends upon another that dependency should be physical not just logical\par
+{\pntext\f1\'B7\tab}The dependent module should not make assumption about the module it depends upon \par
+{\pntext\f1\'B7\tab}Rather it should ask module about the information depend on\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Prefer polymorphism to If/else or Switch/Case\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Consider using polymorphism instead of switch statement which are often a brute force solution\par
+{\pntext\f1\'B7\tab}\b One Switch Rule:\b0  Limit to one switch statement per type of selection, The switch cases should create polymorphic objects to replace other switch statment elsewhere in the system\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Follow Standard Convension \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Every team should follow a coding standard based on common industry norms\par
+{\pntext\f1\'B7\tab}It is like team rule follow the team rule for formatting how to name variables,were to declare instance variable etc..\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Replaced Magic number with named constants\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 In general it is bad idea to have raw number in your code . You should hide them behind well named constant\par
+{\pntext\f1\'B7\tab}Example : number 83000 should be hidden behind the constant SECONDS_PER_DAY \par
+{\pntext\f1\'B7\tab}If you are printing 55 line per page then constant 55 should be hide behind the constant LINES_PER_PAGE\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Be Precise\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 When you make a decision in your code make sure you make it precisely - \b Know why you have made it and how you deal with any exception\b0\par
+{\pntext\f1\'B7\tab}\b Handiling Potential Issues: \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1 Checks for null if function might return \par
+{\pntext\f1\'B7\tab}Use integer for currency and handle routing properly\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Eliminate ambiguities(unclear) and imprecision caused by disagreement\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Struture over convention\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Use structural design over naming converntions to enforce design decision\par
+{\pntext\f1\'B7\tab}Example:- Base Classes with abstract methods are more efficient than switch/case statement with named enumeration\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Encapsulate conditionals\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Use funtion to explain the intent of boolean logic with conditional\par
+{\pntext\f1\'B7\tab}Extracting functions makes boolean logic easier to understand and improves code readability\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Avoid negative conditionals\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Negatives are just a bit harder to understand than positives\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Function should do one thing\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Functions of this kind do more than one things and should be converted into smaller functions,\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Dont be Arbitary(unfair)\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Structure code with clear reason and communicate those reason through the structure\par
+{\pntext\f1\'B7\tab}Consistent stucture helps others follow conventions and prevent arbitary changes\par
+{\pntext\f1\'B7\tab}Public class should be top level in their package not nested inside unrelated classes\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Encapsulate Boundary conditions\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Boundary conditions are hard to keep track of\par
+{\pntext\f1\'B7\tab}put the processing for them in one place\par
+{\pntext\f1\'B7\tab}Dont let them leak all over the code\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Function should descend only one level of abstraction\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 All statement within a function should be at the same level of abstraction which should be one level below the function's name\par
+{\pntext\f1\'B7\tab}\b Example issue: \b0 Mixing level of abstraction\b  \b0 original code combined html tag syntax with bussiness logic\par
+{\pntext\f1\'B7\tab}Seperate levels of abstraction can reveal additional abstraction and improves code organization\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1  \b Keep configurable data at high levels\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 If a constant like a default value is know as high level dont hide it low level function\par
+{\pntext\f1\'B7\tab}pass the constant as an argument from high-level function to low level funtion\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b Avoid transitive Navigation\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1\b Law of Demeter:\b0  Modules should only know about their direct collaborators, not the entire object graph.\par
+{\pntext\f1\'B7\tab}\b Avoid deep navigation\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\b Test\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Insufficient Test\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 The test are insufficient  so long as there are conditions that have not been explored by the tests or calculation that have not been validated\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Use a coverage tool\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Coverage tool reports gaps in your testing strategy\par
+{\pntext\f1\'B7\tab}They make it easy to find modules classes and function that are insufficiently tested\par
+{\pntext\f1\'B7\tab}most IDE gives you a visual indication marking lines that are coverd green and not covered as red\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Don't Skip trivial(important) test\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 they are easy to write and their documentary value in higher than cost to produce them\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b An Ignored test is a question about ambiguity(two or more possible ways)\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Sometimes we are uncertain about a behavioral detail because the requirement are unclear \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Test Boundary conditions\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Take special care to test boundaries conditions. We often get the middle of an algorithm right but misjudge the boundaries\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Exhaustively Test near bugs\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 When you find a bug in a function,it is wise to do an exhaustive(including everything possible) test of that function\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Patterns of failure are revealing\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Sometime you can diagnose  a problem by finding pattern in the way the test case fail\par
+{\pntext\f1\'B7\tab}complete the test cases,ordered in reasonable way,expose pattern\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Test Coverage patterns are revealing\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 Looking at the code that is or is not executed by the passing test gives clues to why the failing tests fail\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Test Should be fast \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 A slow test is a test that wont get run.\par
+{\pntext\f1\'B7\tab}When things get tight,It the slow tests that will be dropped from the suite\par
+{\pntext\f1\'B7\tab}So do what you must to keep test fast\par
+}
+ 
