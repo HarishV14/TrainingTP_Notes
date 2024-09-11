@@ -1,1 +1,1 @@
-GitHub and Clean Code Notes
+Git and Clean Code Notes
